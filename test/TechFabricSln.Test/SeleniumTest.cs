@@ -13,7 +13,7 @@ namespace TechFabricSln.Test
     {
         [Test]
         [Category("UITests")]
-        public void Configure_PaymentMethods()
+        public void VisitMicrosoft_CheckWindowsMenu()
         {
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(40));
