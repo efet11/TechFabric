@@ -10,12 +10,14 @@ namespace TechFabricSln.Test
         }
 
         [Test]
+        [Category("UnitTest")]
         public void Test1()
         {
             Assert.Pass();
         }
 
         [Test]
+        [Category("UnitTest")]
         public void IsBoughtBy_UserIsCustomer_ReturnTrue()
         {
             var bought = new Bought();
