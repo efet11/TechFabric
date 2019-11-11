@@ -19,10 +19,6 @@ steps:
     version: '3.0.x'
     includePreviewVersions: true
     
-- task: MSBuild@1
-  inputs:
-    solution: '**/*.sln'
-    
 
 - task: NuGetToolInstaller@1
   inputs:
