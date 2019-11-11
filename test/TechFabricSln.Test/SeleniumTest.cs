@@ -15,7 +15,7 @@ namespace TechFabricSln.Test
         [Category("UITests")]
         public void VisitMicrosoft_CheckWindowsMenu()
         {
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver(".");
             driver.Navigate().GoToUrl("https://www.microsoft.com/");
 
             Thread.Sleep(10000);
