@@ -16,7 +16,6 @@ namespace TechFabricSln.Test
         public void VisitMicrosoft_CheckWindowsMenu()
         {
             IWebDriver driver = new ChromeDriver();
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(40));
             driver.Navigate().GoToUrl("https://www.microsoft.com/");
 
             Thread.Sleep(10000);
