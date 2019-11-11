@@ -29,7 +29,7 @@ steps:
     publishWebProjects: false
     projects: 'src/TechFabricSln/TechFabricSln.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln/'
-    zipAfterPublish: true
+    zipAfterPublish: false
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
@@ -38,7 +38,7 @@ steps:
     publishWebProjects: false
     projects: 'test/TechFabricSln.Test/TechFabricSln.Test.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln.Test/'
-    zipAfterPublish: true
+    zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'publish artifacts'
