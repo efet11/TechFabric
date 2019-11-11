@@ -16,14 +16,11 @@ steps:
 
 - task: NuGetToolInstaller@0
   displayName: 'Use NuGet 4.3.0'
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet restore test'
+- task: NuGetCommand@2
   inputs:
-    command: restore
-    projects: '**/*Test/*.csproj'
-    feedsToUse: config
-    nugetConfigPath: NuGet.Config
-  continueOnError: true
+    command: 'restore'
+    restoreSolution: '**/*Test/*.csproj'
+    feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
   inputs:
