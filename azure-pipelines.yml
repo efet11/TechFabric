@@ -16,7 +16,7 @@ steps:
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
-    version: '3.0.0'
+    version: '3.0.x'
     includePreviewVersions: true
     
 - task: MSBuild@1
