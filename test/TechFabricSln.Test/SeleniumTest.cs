@@ -24,6 +24,8 @@ namespace TechFabricSln.Test
 
             string Windows_text = driver.FindElement(By.Id("shellmenu_1")).Text;
             Assert.AreEqual("Windows", Windows_text);
+
+            driver.Quit();
         }
     }
 }
